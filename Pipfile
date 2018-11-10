@@ -11,3 +11,6 @@ pyxel = "*"
 
 [requires]
 python_version = "3"
+
+[scripts]
+herobo = python herobo/herobo.py
