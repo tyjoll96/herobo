@@ -11,4 +11,5 @@ class Character:
         self.position['x'] = (self.position['x'] + 1) % pyxel.width
 
     def render(self):
-        pyxel.rect(self.position['x'], 0, self.position['x'] + 7, 7, 9)
+        # pyxel.rect(self.position['x'], 0, self.position['x'] + 7, 7, 9)
+        pyxel.blt(self.position['x'], 5, 0, 0, 0, 16, 16, 5)
