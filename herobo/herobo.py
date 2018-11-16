@@ -1,12 +1,12 @@
 import pyxel
-from characters.character import Character
+from characters.player import Player
 
 class App:
     def __init__(self):
         pyxel.init(160, 120, caption="herobo")
         pyxel.image(0).load(0, 0, "../assets/cat_16x16.png")
         self.x = 0
-        self.player = Character()
+        self.player = Player()
         pyxel.run(self.update, self.draw)
 
     def update(self):
@@ -14,6 +14,6 @@ class App:
 
     def draw(self):
         pyxel.cls(0)
-        self.player.render()
+        self.player.character.render()
 
 App()
